@@ -1,1 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2022-01-12T05:01:04.368Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" version="15.5.0" etag="nucczmC64NTzoqGXQFyf" type="github"><diagram id="ZRUUCLw7PimD79XR8o-I">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-12T05:27:39.682Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="lUiGFvYH_94yo1GF1yMN" version="15.5.0" type="github">
+  <diagram id="ZRUUCLw7PimD79XR8o-I" name="Page-1">
+    <mxGraphModel dx="782" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Xvr_ySYlSpiOY6qDpioB-1" value="Robot" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="110" y="70" width="360" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Xvr_ySYlSpiOY6qDpioB-2" value="- name : String &lt;&lt;private&gt;&gt;&#xa;- symbol : char&#xa;- y : int&#xa;- x : int&#xa;+ X_MIN : int = 0 &lt;&lt; public &gt;&gt;&#xa;+ X_MAX : int = 19 &lt;&lt; public &gt;&gt;&#xa;+ Y_MIN : int = 0 &lt;&lt; public &gt;&gt;&#xa;+ Y_ MAX : int = 19 &lt;&lt; public  &gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" vertex="1" parent="Xvr_ySYlSpiOY6qDpioB-1">
+          <mxGeometry y="26" width="360" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="Xvr_ySYlSpiOY6qDpioB-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Xvr_ySYlSpiOY6qDpioB-1">
+          <mxGeometry y="200" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xvr_ySYlSpiOY6qDpioB-4" value="+ Robot(name : String , symbol: char,x : int ,y: int)&#xa;+ Robot(name : String,symbol:char)&#xa;+ up (): boolean&#xa;+ up (step : int ) : boolean&#xa;+ down (): boolean&#xa;+ down (step : int ) : boolean&#xa;+ left (): boolean&#xa;+ left (step : int ) : boolean&#xa;+ right (): boolean&#xa;+ right (step : int ) : boolean&#xa;+ getX():int&#xa;+ getY():int&#xa;+ getName(): String&#xa;+ getSymbol():char" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;" vertex="1" parent="Xvr_ySYlSpiOY6qDpioB-1">
+          <mxGeometry y="208" width="360" height="282" as="geometry" />
+        </mxCell>
+        <mxCell id="Xvr_ySYlSpiOY6qDpioB-6" value="BookBank" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="500" y="70" width="350" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Xvr_ySYlSpiOY6qDpioB-7" value="- name : String &lt;&lt; private &gt;&gt;&#xa;- balance : double &lt;&lt; private &gt;&gt;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="Xvr_ySYlSpiOY6qDpioB-6">
+          <mxGeometry y="26" width="350" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="Xvr_ySYlSpiOY6qDpioB-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontSize=20;" vertex="1" parent="Xvr_ySYlSpiOY6qDpioB-6">
+          <mxGeometry y="200" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xvr_ySYlSpiOY6qDpioB-9" value="+ BookBank(name :String ,  balance : double)&#xa;+ deposit(money: double) : boolean&#xa;+ withdraw(money : double ):boolean&#xa;+ print() :void&#xa;+ getName(): String&#xa;+ getBalance(): double&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="Xvr_ySYlSpiOY6qDpioB-6">
+          <mxGeometry y="208" width="350" height="282" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
